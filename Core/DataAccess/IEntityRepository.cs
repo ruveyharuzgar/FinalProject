@@ -14,7 +14,7 @@ namespace Core.DataAccess
     {
         List<T> GetAll(Expression<Func<T,bool>> filter=null);
         //burda productManager de ki getall ı çağırıyorduk ya, onun içerisine
-        //istediğim filtreyi ayrı ayrı yazmamak için böyle yazıyorum.HEpsini görüntüle
+        //istediğim filtreyi ayrı ayrı yazmamak için böyle yazıyorum.Hepsini görüntüle
         //aşağıda ki gibi de yazarsam filtre verdiysem öyle yaz
         T Get(Expression<Func<T, bool>> filter);
         void Add(T entity);
