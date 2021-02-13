@@ -11,7 +11,7 @@ namespace ConsoleUI
         {
             ProductTest();
             //CategoryTest();
-
+            Console.WriteLine("Değişiklik deneme");
         }
 
         private static void CategoryTest()
