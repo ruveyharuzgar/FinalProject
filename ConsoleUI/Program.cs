@@ -14,7 +14,7 @@ namespace ConsoleUI
             Console.WriteLine("Değişiklik deneme");
         }
 
-        private static void CategoryTest()
+        /*private static void CategoryTest()
         {
             CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
             foreach (var category in categoryManager.GetAll())
@@ -22,11 +22,11 @@ namespace ConsoleUI
                 Console.WriteLine(category.CategoryName);
                 Console.ReadLine();
             }
-        }
+        }*/
 
         private static void ProductTest()
         {
-            ProductManager productManager = new ProductManager(new EfProductDal());
+            ProductManager productManager = new ProductManager(new EfProductDal(),new CategoryManager(new EfCategoryDal()));
 
             var result = productManager.GetProductDetails();
 
