@@ -17,7 +17,6 @@ namespace Business.DependencyResolvers.Autofac
 {
     public class AutofacBusinessModule:Module
     {
-        //uygulama ayağa kalktığında çalışacak kısım->startup da yazdığın newlememe kısayolu;
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<ProductManager>().As<IProductService>().SingleInstance();
