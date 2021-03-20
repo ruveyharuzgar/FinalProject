@@ -17,7 +17,6 @@ namespace Business.Concrete
         }
         public IDataResult<List<Category>> GetAll()
         {
-            //iş kodları
             return new SuccessDataResult<List<Category>>(_categoryDal.GetAll());
         }
 

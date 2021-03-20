@@ -14,8 +14,6 @@ namespace Core.DataAccess.EntityFramework
     {
         public void Add(TEntity entity)
         {
-            //IDisposable pattern implement c#
-            //using bittiği anla belleği temizle 
             using (TContext context = new TContext())
             {
                 var addedEntity = context.Entry(entity);

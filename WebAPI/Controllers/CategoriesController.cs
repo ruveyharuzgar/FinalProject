@@ -23,7 +23,6 @@ namespace WebAPI.Controllers
         public IActionResult GetAll()
         {
             Thread.Sleep(1000);
-
             var result = _categoryService.GetAll();
             if (result.Success)
             {
